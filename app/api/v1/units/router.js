@@ -4,6 +4,7 @@ const router = express.Router();
 const { unitCreateAndUpdateValidation } = require("./validation");
 
 /* GET users listing. */
+console.log("tes");
 router.get("/units", getAll);
 router.post("/units", unitCreateAndUpdateValidation, create);
 router.get("/units/:id", getOne);
